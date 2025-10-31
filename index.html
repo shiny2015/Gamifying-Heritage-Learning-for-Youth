@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telangana Heritage Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fade-in">
+
+  <header>
+    <h1>Telangana Heritage Quiz</h1>
+    <p>Explore, Learn, and Celebrate Our Culture!</p>
+  </header>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="charminar.jpg" alt="Charminar" onclick="selectSite('charminar')" />
+      <img src="ramappa.jpg" alt="Ramappa Temple" onclick="selectSite('ramappa')" />
+      <img src="golconda.jpg" alt="Golconda Fort" onclick="selectSite('golconda')" />
+      <img src="thousand pillar.jpg" alt="Thousand Pillar Temple" onclick="selectSite('thousand_pillar')" />
+      <img src="chilkur.jpg" alt="Chilkur Balaji Temple" onclick="selectSite('chilkur')" />
+      <img src="sammakka.jpg" alt="Sammakka Saralamma Jatara" onclick="selectSite('sammakka')" />
+      <img src="jogulamba.jpg" alt="Jogulamba Temple" onclick="selectSite('jogulamba')" />
+      <img src="yadigirigutta.jpg" alt="Yadagirigutta" onclick="selectSite('yadagirigutta')" />
+    </div>
+  </div>
+
+  <script>
+    function selectSite(site) {
+      localStorage.setItem('selectedSite', site);
+      window.location.href = "quiz.html";
+    }
+  </script>
+
+</body>
+</html>
