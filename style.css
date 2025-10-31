@@ -1,0 +1,97 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background 1s ease-in-out;
+  background: linear-gradient(120deg, #800000, #ffcc00);
+  min-height: 100vh;
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+}
+
+/* Slider styles */
+.slider {
+  width: 90%;
+  margin: 40px auto;
+  overflow-x: scroll;
+  display: flex;
+  gap: 15px;
+  scroll-behavior: smooth;
+}
+
+.slides img {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.slides img:hover {
+  transform: scale(1.05);
+}
+
+/* Quiz page styling */
+.quiz-container {
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#optionsBox button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#optionsBox button:hover {
+  background: #ffd700;
+}
+
+#nextBtn {
+  background: #8b0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#resultBox {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.hidden {
+  display: none;
+}
